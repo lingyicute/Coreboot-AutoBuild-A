@@ -5,4 +5,6 @@ git submodule update --init --checkout --recursive
 make crossgcc-i386 CPUS=$(nproc)
 cp ../coreboot_logo.bmp ./Documentation/
 ./build-uefi.sh nami
+./build-uefi.sh fizz
+./build-uefi.sh cave
 sha256sum ../roms/*
