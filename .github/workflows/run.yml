@@ -12,5 +12,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: arts
-          path: $GITHUB_WORKSPACE/roms/*
+          path: ~/dev/roms/*
           
