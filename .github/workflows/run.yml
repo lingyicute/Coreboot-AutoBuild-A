@@ -1,0 +1,16 @@
+name: run
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: chmod +x ./build
+      - run: bash ./build
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: arts
+          path: $GITHUB_WORKSPACE/coreboot
+          
