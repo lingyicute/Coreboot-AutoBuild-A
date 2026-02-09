@@ -7,7 +7,5 @@ cp ../coreboot_logo.bmp ./Documentation/
 ./build-uefi.sh nami
 ./build-uefi.sh fizz
 ./build-uefi.sh cave
-tree -a ~/dev/roms
-sha256sum ~/dev/roms/*
 tree -a ../roms
 sha256sum ../roms/*
