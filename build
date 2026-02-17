@@ -3,7 +3,7 @@ set -euo pipefail
 
 sudo apt install -y bison build-essential curl flex git gnat imagemagick libncurses5-dev m4 nasm python-is-python3 uuid-dev zlib1g-dev libssl-dev pkg-config libcmocka-dev libnss3-dev -y
 
-git clone https://github.com/mrchromebox/coreboot.git --depth=1
+git clone https://github.com/lingyicute/coreboot.git --depth=1
 cd coreboot
 git submodule update --init --checkout --recursive
 
